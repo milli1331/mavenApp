@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/milli1331/mvnapp.git'
+                git branch: 'master', url: 'https://github.com/milli1331/mavenApp.git'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/MYMavenApp06-1.0-SNAPSHOT.jar'
+                sh 'java -jar target/MyMavenApp06-1.0-SNAPSHOT.jar'
             }
         }
 
